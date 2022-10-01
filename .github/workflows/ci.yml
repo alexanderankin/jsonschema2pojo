@@ -36,4 +36,4 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Verify with Maven
-        run: mvn verify -B --file pom.xml
+        run: ./mvnw verify -B --file pom.xml
